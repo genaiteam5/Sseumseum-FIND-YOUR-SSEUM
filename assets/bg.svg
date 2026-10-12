@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" preserveAspectRatio="xMidYMid slice">
+<rect x="-400" y="-400" width="2240" height="1824" fill="#F3F3F3"/>
+<mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="104" y="30" width="193" height="221">
+<path d="M200.139 30.0918L104.092 61.7438L117.556 233.331L258.485 250.823L296.186 115.885L270.155 66.7416L200.139 30.0918Z" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="103.848" y="-149.072" width="328.221" height="437.628" fill="url(#pattern0)"/>
+</g>
+<mask id="mask1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1166" y="29" width="246" height="229">
+<path d="M1210.24 49.5433L1166.39 138.015L1300.38 257.63L1411.17 175.767L1339.4 49.1552L1285.59 29.842L1210.24 49.5433Z" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1)">
+<rect x="1015.4" y="69.4258" width="330.098" height="440.13" transform="rotate(-19.0568 1015.4 69.4258)" fill="url(#pattern1)"/>
+</g>
+<rect x="434.912" y="866.697" width="442.305" height="248.797" transform="rotate(-14.3574 434.912 866.697)" fill="url(#pattern2)"/>
+<rect width="462.548" height="260.183" transform="matrix(-0.916709 -0.399555 -0.399555 0.916709 1378.17 853.272)" fill="url(#pattern3)"/>
+<rect x="434.947" y="10.8691" width="555.394" height="312.409" transform="rotate(-6.95146 434.947 10.8691)" fill="url(#pattern4)"/>
+<rect x="-146.047" y="253.419" width="435.039" height="244.71" transform="rotate(9.86219 -146.047 253.419)" fill="url(#pattern5)"/>
+<rect x="11.7715" y="563.257" width="309.767" height="495.628" transform="rotate(25.0218 11.7715 563.257)" fill="url(#pattern6)"/>
+<rect x="597.709" y="411.222" width="528.06" height="297.034" fill="url(#pattern7)"/>
+<rect x="1089.17" y="373.224" width="454.552" height="255.686" fill="url(#pattern8)"/>
+<rect width="250.646" height="234.126" transform="matrix(-0.998757 0.0498439 0.0498439 0.998757 485.705 471.581)" fill="url(#pattern9)"/>
+<rect x="1079.75" y="148.176" width="206.005" height="188.667" transform="rotate(63.3072 1079.75 148.176)" fill="url(#pattern10)"/>
+<rect width="315.033" height="236.275" transform="matrix(-0.996361 0.0852323 0.0852323 0.996361 1663.21 695.085)" fill="url(#pattern11)"/>
+<rect x="1632.88" y="454.31" width="324.642" height="519.428" transform="rotate(-148.692 1632.88 454.31)" fill="url(#pattern12)"/>
+<rect width="371.627" height="278.72" transform="matrix(-0.797926 0.602755 0.602755 0.797926 523.832 104.733)" fill="url(#pattern13)"/>
+<rect x="434.854" y="718.037" width="209.858" height="335.772" transform="rotate(53.9584 434.854 718.037)" fill="url(#pattern14)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj00.png" width="3072" height="4096" preserveAspectRatio="none" transform="scale(0.000325521 0.000244141)"/></pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj00.png" width="3072" height="4096" preserveAspectRatio="none" transform="scale(0.000325521 0.000244141)"/></pattern>
+<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj01.png" width="3840" height="2160" preserveAspectRatio="none" transform="scale(0.000260417 0.000462963)"/></pattern>
+<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj02.png" width="3840" height="2160" preserveAspectRatio="none" transform="scale(0.000260417 0.000462963)"/></pattern>
+<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj03.png" width="3840" height="2160" preserveAspectRatio="none" transform="scale(0.000260417 0.000462963)"/></pattern>
+<pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj04.png" width="3840" height="2160" preserveAspectRatio="none" transform="scale(0.000260417 0.000462963)"/></pattern>
+<pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj05.png" width="1920" height="3072" preserveAspectRatio="none" transform="scale(0.000520833 0.000325521)"/></pattern>
+<pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj06.png" width="3840" height="2160" preserveAspectRatio="none" transform="scale(0.000260417 0.000462963)"/></pattern>
+<pattern id="pattern8" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj07.png" width="3840" height="2160" preserveAspectRatio="none" transform="scale(0.000260417 0.000462963)"/></pattern>
+<pattern id="pattern9" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj08.png" width="3840" height="2160" preserveAspectRatio="none" transform="matrix(0.000432613 0 0 0.000463139 -0.286296 -0.000143901)"/></pattern>
+<pattern id="pattern10" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj09.png" width="2560" height="4096" preserveAspectRatio="none" transform="matrix(0.000390675 0 0 0.000426576 -6.39059e-05 -0.437061)"/></pattern>
+<pattern id="pattern11" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj10.png" width="2560" height="1920" preserveAspectRatio="none" transform="scale(0.000390625 0.000520833)"/></pattern>
+<pattern id="pattern12" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj11.png" width="2560" height="4096" preserveAspectRatio="none" transform="scale(0.000390625 0.000244141)"/></pattern>
+<pattern id="pattern13" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj12.png" width="2560" height="1920" preserveAspectRatio="none" transform="scale(0.000390625 0.000520833)"/></pattern>
+<pattern id="pattern14" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="img/obj13.png" width="2560" height="4096" preserveAspectRatio="none" transform="scale(0.000390625 0.000244141)"/></pattern>
+</defs>
+</svg>

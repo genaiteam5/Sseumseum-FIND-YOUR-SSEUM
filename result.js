@@ -22,11 +22,11 @@ const RESULTS = {
     alt: '하트 고리가 달린 흰 도어벨. 당신에게 사랑은 작은 것까지 기억하고 챙겨주는 것',
   },
   umbrella: {
-    // 우산 결과 디자인이 들어오면 문구와 이미지 교체
-    title: ['당신은 ', '우산', ' 같은 사람입니다.'],
-    body: '우산 결과 화면은 디자인 준비 중입니다.',
-    image: null,
-    alt: '',
+    title: ['당신은 ', '‘함께 들어주는’ 우산', ' 같은 사람입니다.'],
+    body: '당신은 누군가가 무언가를 혼자 감당하고 있을 때 그냥 바라보기보다 자연스럽게 옆으로 다가가 손을 보태는 사람입니다.\n완벽한 해결책을 주기보다 같은 방향을 바라보고, 힘든 순간을 함께 나누는 행동에서 사랑을 표현합니다.',
+    image: 'assets/result/umbrella.webp',
+    crop: 470, // 손잡이가 다른 제품보다 위에서 시작
+    alt: '하트 모양 손잡이가 달린 분홍 우산. 당신에게 사랑은 혼자 두지 않고 같이 해주는 것',
   },
   chair: {
     title: ['당신은 ', '‘곁을 내어주는’ 의자', ' 같은 사람입니다.'],
@@ -73,13 +73,10 @@ if (!key) {
   );
   document.querySelector('.r-body').innerHTML = r.body.replace(/\n/g, '<br>');
   const visual = document.querySelector('.r-visual');
-  if (r.image) {
-    const img = visual.querySelector('img');
-    img.src = r.image;
-    img.alt = r.alt;
-  } else {
-    visual.hidden = true;
-  }
+  const img = visual.querySelector('img');
+  img.src = r.image;
+  img.alt = r.alt;
+  if (r.crop) visual.style.setProperty('--crop', r.crop);
   document.title = `${r.title[1].replace(/[‘’]/g, '')} — FIND YOUR SSEUM`;
 }
 

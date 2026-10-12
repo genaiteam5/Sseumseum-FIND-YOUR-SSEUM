@@ -37,12 +37,13 @@
   white-space: nowrap;
 }
 
-/* 제품 이미지: 디자인 이미지(2000×1414)의 아래쪽(y 540~)만 보여줌 */
+/* 제품 이미지: 디자인 이미지(2000×1414)의 아래쪽(y --crop ~)만 보여줌 */
 .r-visual {
+  --crop: 540;
   position: absolute;
   left: 0;
   right: 0;
-  top: 388.8px;
+  top: calc(var(--crop) * 0.72px);
   bottom: 0;
   overflow: hidden;
   margin: 0;
@@ -50,7 +51,7 @@
 .r-visual img {
   display: block;
   width: 100%;
-  margin-top: -27%;
+  margin-top: calc(var(--crop) / 2000 * -100%);
 }
 
 @media (max-width: 720px) and (orientation: portrait) {
@@ -73,6 +74,6 @@
   .r-body br { display: none; }
   .r-visual {
     margin: 28px -20px 0;
-    aspect-ratio: 2000 / 874;
+    aspect-ratio: 2000 / calc(1414 - var(--crop));
   }
 }

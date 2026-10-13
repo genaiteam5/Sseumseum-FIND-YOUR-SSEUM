@@ -12,7 +12,7 @@ const key = new URLSearchParams(location.search).get('r');
 if (!NAMES[key]) {
   location.replace('index.html');
 } else {
-  const src = `assets/card/${key}.png`;
+  const src = `assets/card/${key}.webp`;
   const fileName = `FIND-YOUR-SSEUM_${key}.png`;
   const img = document.querySelector('.card__img');
   img.src = src;
@@ -21,7 +21,13 @@ if (!NAMES[key]) {
 
   document.querySelector('.card__save').addEventListener('click', async () => {
     try {
-      const blob = await (await fetch(src)).blob();
+      // 사진첩 호환을 위해 PNG로 변환해서 저장
+      await img.decode();
+      const canvas = document.createElement('canvas');
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      canvas.getContext('2d').drawImage(img, 0, 0);
+      const blob = await new Promise((res) => canvas.toBlob(res, 'image/png'));
       const file = new File([blob], fileName, { type: 'image/png' });
       // iOS·안드로이드: 공유 시트에서 '이미지 저장'
       if (navigator.canShare && navigator.canShare({ files: [file] })) {

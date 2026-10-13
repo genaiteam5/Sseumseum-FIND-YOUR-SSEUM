@@ -79,7 +79,11 @@
 .r-qr__code svg { display: block; width: 100%; height: 100%; }
 
 @media (max-width: 720px) and (orientation: portrait) {
-  .r-qr { display: none; }
+  .r-qr {
+    position: static;
+    width: fit-content;
+    margin: 28px auto 0;
+  }
   .page-result { overflow: auto; }
   .stage {
     position: static;

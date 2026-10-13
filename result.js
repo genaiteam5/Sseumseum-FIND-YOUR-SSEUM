@@ -61,7 +61,8 @@ function getResultKey() {
 }
 
 const key = getResultKey();
-const isPhone = matchMedia('(max-width: 720px) and (orientation: portrait)').matches;
+// 터치 휴대폰만 카드 화면으로 (PC 창을 좁게 해도 QR이 보이도록)
+const isPhone = matchMedia('(max-width: 720px) and (orientation: portrait) and (pointer: coarse)').matches;
 if (!key) {
   location.replace('index.html');
 } else if (isPhone) {

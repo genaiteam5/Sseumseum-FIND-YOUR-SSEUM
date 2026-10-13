@@ -61,8 +61,12 @@ function getResultKey() {
 }
 
 const key = getResultKey();
+const isPhone = matchMedia('(max-width: 720px) and (orientation: portrait)').matches;
 if (!key) {
   location.replace('index.html');
+} else if (isPhone) {
+  // 휴대폰에서는 세로형 결과 카드로
+  location.replace(`card.html?r=${key}`);
 } else {
   const r = RESULTS[key];
   const titleEl = document.querySelector('.r-title');
@@ -77,6 +81,18 @@ if (!key) {
   img.src = r.image;
   img.alt = r.alt;
   if (r.crop) visual.style.setProperty('--crop', r.crop);
+
+  // 휴대폰 저장용 QR → card.html?r=<key>
+  const cardUrl = new URL(`card.html?r=${key}`, location.href).href;
+  const qrBox = document.querySelector('.r-qr__code');
+  if (window.qrcode) {
+    const qr = qrcode(0, 'M');
+    qr.addData(cardUrl);
+    qr.make();
+    qrBox.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+  } else {
+    document.querySelector('.r-qr').hidden = true;
+  }
   document.title = `${r.title[1].replace(/[‘’]/g, '')} — FIND YOUR SSEUM`;
 }
 

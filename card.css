@@ -1,0 +1,61 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+
+.card {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 544 / 1182;
+  -webkit-touch-callout: default; /* iOS 길게 눌러 저장 허용 */
+}
+
+.card__actions {
+  padding: 8px 20px 0;
+  text-align: center;
+}
+
+.card__save {
+  width: 100%;
+  height: 56px;
+  border: 0;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform .15s ease, background-color .2s ease;
+}
+.card__save:active { transform: scale(0.98); background: #222; }
+.card__save:focus-visible { outline: 3px solid #000; outline-offset: 3px; }
+
+.card__hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+.card__again {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 1px solid #000;
+  border-radius: 999px;
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+}
